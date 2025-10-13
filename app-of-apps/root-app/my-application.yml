@@ -13,9 +13,12 @@ spec:
 
   # Source of the application manifests
   source:
-    repoURL: https://github.com/avixyio/gitops-cert-level-2-examples.git
-    targetRevision: HEAD
-    path: ./app-of-apps/my-app-list
+    - repoURL: https://github.com/avixyio/gitops-cert-level-2-examples.git
+      targetRevision: HEAD
+      path: ./app-of-apps/my-app-list
+    - repoURL: https://github.com/avixyio/gitops-cert-level-2-examples.git
+      targetRevision: HEAD
+      path: ./app-of-apps/more-apps
    
     # directory
     directory:
